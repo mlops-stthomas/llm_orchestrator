@@ -1,0 +1,14 @@
+{
+  "summarize_v1": {
+    "version": "v1",
+    "name": "Basic Summarizer",
+    "system": "You are a professional documentation writer.",
+    "user": "Summarize this work log for a client-facing report.\n\nWork Log: {{ raw_description }}\nProject: {{ project_name }}\nDate: {{ date }}\n\nKeep it under {{ max_words }} words. Be professional. Do not use informal language.\n\nReturn ONLY valid JSON (no markdown, no code fences) with these fields:\n- summary (string)\n- billing_category (one of: {{ billing_categories }})\n- next_steps (string)\n- flagged (boolean - true if the original log had unprofessional content)\n- flag_reason (string or null)"
+  },
+  "summarize_v2": {
+    "version": "v2",
+    "name": "Strict Summarizer",
+    "system": "You are a professional documentation writer for a consulting firm. You produce concise, client-safe summaries of internal work logs. You NEVER include informal language, internal staff names, or internal tool references in your output.",
+    "user": "Convert the following internal work log into a client-facing summary.\n\n## Work Log\n- Consultant: {{ consultant }}\n- Project: {{ project_name }} ({{ client_name }})\n- Date: {{ date }}\n- Hours: {{ hours }}\n- Description: {{ raw_description }}\n\n## Strict Rules\n1. Summary MUST be under {{ max_words }} words\n2. NEVER use these forbidden words: {{ forbidden_words }}\n3. NEVER mention internal staff by name ({{ internal_names }})\n4. NEVER mention internal tools ({{ internal_tools }})\n5. Use professional, third-person tone ONLY\n6. Billing category MUST be exactly one of: {{ billing_categories }}\n7. If the original log contains unprofessional language or negative client sentiments, set flagged=true with a reason\n\n## Required Output\nReturn ONLY valid JSON (no markdown, no code fences):\n{\"summary\": \"...\", \"billing_category\": \"...\", \"next_steps\": \"...\", \"flagged\": true/false, \"flag_reason\": \"...\" or null}"
+  }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "WL-001",
+    "consultant": "Jamie Chen",
+    "project_code": "ACME-DATA",
+    "date": "2024-03-15",
+    "hours": 3.5,
+    "raw_description": "Built the new data ingestion module for the analytics dashboard. Set up the PostgreSQL connection pooling and wrote the ETL transformation logic. All unit tests passing. Ready for code review."
+  },
+  {
+    "id": "WL-002",
+    "consultant": "Sarah Kim",
+    "project_code": "ACME-DATA",
+    "date": "2024-03-15",
+    "hours": 2.0,
+    "raw_description": "Spent most of the morning debugging the janky ETL pipeline. Turns out their API was sending garbage null values in the response payload. Had to hack together a workaround using coalesce functions. Pinged Mike on Slack about it."
+  },
+  {
+    "id": "WL-003",
+    "consultant": "Mike Torres",
+    "project_code": "GLOBEX-CRM",
+    "date": "2024-03-16",
+    "hours": 4.0,
+    "raw_description": "Met with the client to discuss the CRM integration requirements. They are completely clueless about their own data model - took forever to get straight answers. Eventually mapped out the entity relationships. The whole thing is a mess but we can probably make it work."
+  },
+  {
+    "id": "WL-004",
+    "consultant": "Priya Patel",
+    "project_code": "WAYNE-SEC",
+    "date": "2024-03-16",
+    "hours": 5.0,
+    "raw_description": "Conducted security audit of the authentication system. Found three critical vulnerabilities in the session management layer. Documented findings in Jira ticket SEC-445 and shared the report with Jordan on Confluence. Need to schedule a follow-up with the client's security team."
+  },
+  {
+    "id": "WL-005",
+    "consultant": "Alex Rivera",
+    "project_code": "STARK-ML",
+    "date": "2024-03-17",
+    "hours": 6.0,
+    "raw_description": "Worked on training the recommendation engine model using the updated customer behavior dataset. Ran multiple experiments with different hyperparameter configurations including learning rate adjustments from 0.001 to 0.01, batch size variations between 32 and 128, and dropout rate tuning. The best performing model achieved 94.2% accuracy on the validation set which is a significant improvement over the baseline of 87.1%. Also refactored the feature engineering pipeline to handle the new product category taxonomy that the client introduced last week. Had to update the embedding layer dimensions and retrain from scratch after discovering a data leakage issue in the cross-validation splits. Finally got everything working and pushed the model artifacts to the staging environment for A/B testing."
+  },
+  {
+    "id": "WL-006",
+    "consultant": "Jordan Lee",
+    "project_code": "GLOBEX-CRM",
+    "date": "2024-03-17",
+    "hours": 3.0,
+    "raw_description": "Did a mix of things today. Helped the client's team understand the API documentation, fixed a bug in the data sync module, and sat in on their sprint planning to understand priorities. Not really sure how to categorize this one."
+  },
+  {
+    "id": "WL-007",
+    "consultant": "Jamie Chen",
+    "project_code": "ACME-DATA",
+    "date": "2024-03-18",
+    "hours": 2.5,
+    "raw_description": "This freakin' deployment pipeline is driving me nuts. Spent half the day fighting with their stupid CI/CD setup. Config files are a complete dumpster fire. Finally got it working but honestly the whole thing needs to be rebuilt from scratch. Whoever set this up originally had no idea what they were doing."
+  },
+  {
+    "id": "WL-008",
+    "consultant": "Sarah Kim",
+    "project_code": "WAYNE-SEC",
+    "date": "2024-03-18",
+    "hours": 1.5,
+    "raw_description": "Responded to client support request about password reset flow not working in production. Traced the issue to an expired SSL certificate on the email relay service. Renewed the certificate and verified the fix in production. Client confirmed the issue is resolved."
+  },
+  {
+    "id": "WL-009",
+    "consultant": "Priya Patel",
+    "project_code": "STARK-ML",
+    "date": "2024-03-18",
+    "hours": 4.0,
+    "raw_description": "Performed exploratory data analysis on the customer churn dataset. Created visualization dashboards showing key churn indicators: usage frequency decline, support ticket volume correlation, and contract renewal patterns. Identified three distinct customer segments with significantly different churn risk profiles."
+  },
+  {
+    "id": "WL-010",
+    "consultant": "Mike Torres",
+    "project_code": "ACME-DATA",
+    "date": "2024-03-19",
+    "hours": 2.0,
+    "raw_description": "Quick sync with the Acme team about the migration timeline. Walked them through our proposed architecture for the real-time data pipeline. They had concerns about throughput at peak hours so we discussed adding a message queue layer. Agreed to prototype it next week."
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "code": "ACME-DATA",
+    "name": "Data Migration Platform",
+    "client": "Acme Corporation",
+    "industry": "Manufacturing",
+    "status": "active"
+  },
+  {
+    "code": "GLOBEX-CRM",
+    "name": "CRM Integration Suite",
+    "client": "Globex Industries",
+    "industry": "Retail",
+    "status": "active"
+  },
+  {
+    "code": "WAYNE-SEC",
+    "name": "Security Infrastructure Modernization",
+    "client": "Wayne Enterprises",
+    "industry": "Technology",
+    "status": "active"
+  },
+  {
+    "code": "STARK-ML",
+    "name": "ML Recommendation Engine",
+    "client": "Stark Industries",
+    "industry": "E-Commerce",
+    "status": "active"
+  }
+]

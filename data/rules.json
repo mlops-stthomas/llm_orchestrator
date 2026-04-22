@@ -1,0 +1,47 @@
+{
+  "max_words": 50,
+  "forbidden_words": [
+    "hack",
+    "hacked",
+    "hacking",
+    "janky",
+    "jank",
+    "clueless",
+    "garbage",
+    "stupid",
+    "dumb",
+    "crap",
+    "crappy",
+    "sucks",
+    "broken",
+    "screwed",
+    "freakin",
+    "freaking",
+    "nuts",
+    "crazily"
+  ],
+  "internal_tools": [
+    "Slack",
+    "Jira",
+    "Confluence",
+    "Notion",
+    "GitHub",
+    "GitLab"
+  ],
+  "internal_staff": [
+    "Jamie Chen",
+    "Sarah Kim",
+    "Mike Torres",
+    "Priya Patel",
+    "Alex Rivera",
+    "Jordan Lee"
+  ],
+  "billing_categories": [
+    "Development",
+    "Analysis",
+    "Consultation",
+    "Infrastructure",
+    "Support"
+  ],
+  "tone": "professional, third-person"
+}
